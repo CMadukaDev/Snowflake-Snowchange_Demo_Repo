@@ -12,6 +12,8 @@ USE ROLE JDAO_ADMIN;
 -- Select warehouse.
 USE WAREHOUSE COMPUTE_WH;
 
+SELECT 'The current time is '|| CURRENT_TIMESTAMP();
+
 -- Use database.
 -- USE DATABASE EDW_TEST;
 USE DATABASE EDW_SANDBOX;
