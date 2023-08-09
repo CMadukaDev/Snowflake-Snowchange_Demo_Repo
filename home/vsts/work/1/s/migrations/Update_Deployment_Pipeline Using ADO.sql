@@ -1,16 +1,28 @@
 -- Select role.
-USE ROLE SYSADMIN;
+-- USE ROLE SYSADMIN;
+USE ROLE JDAO_ADMIN;
+
+--  Completed: Use a warehouse
+-- Completed: Grant JDAO_ADMIN to SVC_Relase_MGR user 
+-- Create a table in Chinomnso Sandbox
+-- Modify the script to perform an insert on the table
+
+
 
 -- Select warehouse.
--- USE WAREHOUSE COMPUTE_WH;
+USE WAREHOUSE COMPUTE_WH;
 
 -- Use database.
-USE DATABASE EDW_TEST;
+-- USE DATABASE EDW_TEST;
+USE DATABASE EDW_SANDBOX;
 
---
-CREATE OR REPLACE SCHEMA EDW_TEST.TEST_DEPLOYMENT;
+-- INSERT INTO EDW_SANDBOX.CHINOMNSO.TESTDEPLOYMENT  
+INSERT INTO EDW_SANDBOX.CHINOMNSO.TESTDEPLOYMENT(DEPLOYMENT_TIME) VALUES(CURRENT_TIMESTAMP());
 
--- Create or replace TEST_DEPLOYMENT_TABLE table.
+-- CREATE OR REPLACE SCHEMA EDW_TEST.TEST_DEPLOYMENT;
+
+-- Create or replace TEST_DEPLOYMENT_TABLE table. 
+-- Do not create a table in GitHub repo. Manually create the table in Snowflake env.
 -- CREATE OR REPLACE TABLE EDW_TEST.TEST_DEPLOYMENT.TEST_DEPLOYMENT_TABLE(
 -- DEPLOYMENT_NAME VARCHAR(255)
 -- );
