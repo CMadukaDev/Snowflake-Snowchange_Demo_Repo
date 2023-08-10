@@ -7,7 +7,7 @@ USE ROLE JDAO_ADMIN;
 -- Create a table in Chinomnso Sandbox
 -- Modify the script to perform an insert on the table
 
-Try dropping and recreating schemachange 
+-- Try dropping and recreating schemachange 
 
 -- Select warehouse.
 USE WAREHOUSE COMPUTE_WH;
