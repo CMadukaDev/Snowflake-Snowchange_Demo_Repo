@@ -14,9 +14,9 @@ variables:
 - group: demo-variables
 steps:
 - task: UsePythonVersion@0
-  displayName: 'Use Python 3.8.x'
+  displayName: 'Use Python 3.10'
   inputs:
-    versionSpec: '3.8.x'
+    versionSpec: '3.10'
 - task: Bash@3
   inputs:
     targetType: 'inline'
