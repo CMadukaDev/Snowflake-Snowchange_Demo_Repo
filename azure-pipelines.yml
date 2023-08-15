@@ -8,7 +8,7 @@ trigger:
     - main
   paths:
     include:
-    - /migrations
+    - $(Build.SourceDirectory)/migrations
 pool:
   vmImage: 'ubuntu-latest'
 variables:
